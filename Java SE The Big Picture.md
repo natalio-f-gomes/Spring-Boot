@@ -126,6 +126,21 @@ public class App {
             .toList() // finally lets convert the result of the map operation to a list
     }
 }
-````
+```
+
+### What is the difference between Heap and STACK
+To illustrate this:
+    int x = 10; // located in the stack
+    Person p = new Person(); p is in the stack which refers to the object Person in the Heap
+
+Heap is a shared memory area where all objects and the instance variable are aloocated at runtime.
+
+A process contains a heap and multiple threads, and each thread has its own stack.
+Process
+├── Heap        (shared)
+└── Threads
+    ├── Thread 1 → Stack
+    ├── Thread 2 → Stack
+    └── Thread 3 → Stack
 
 ---
