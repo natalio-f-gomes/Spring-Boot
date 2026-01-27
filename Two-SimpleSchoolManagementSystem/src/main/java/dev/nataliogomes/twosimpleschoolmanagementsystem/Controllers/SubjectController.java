@@ -1,6 +1,5 @@
 package dev.nataliogomes.twosimpleschoolmanagementsystem.Controllers;
 
-import dev.nataliogomes.twosimpleschoolmanagementsystem.Models.StudentModel;
 import dev.nataliogomes.twosimpleschoolmanagementsystem.Models.SubjectModel;
 import dev.nataliogomes.twosimpleschoolmanagementsystem.Services.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.security.auth.Subject;
 import java.util.List;
 
 @RestController
