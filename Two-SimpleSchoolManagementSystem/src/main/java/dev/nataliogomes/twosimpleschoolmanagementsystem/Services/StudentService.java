@@ -20,6 +20,7 @@ public class StudentService {
     @Autowired
     private SubjectRepository subjectRepository;
 
+
     public StudentModel createStudent(StudentModel newStudent){
         newStudent.setCreatedAt(LocalDateTime.now());
         newStudent.setUpdatedAt(LocalDateTime.now());
@@ -43,6 +44,15 @@ public class StudentService {
     }
 
     public void deleteStudentById(Long id){
+        StudentModel student = getStudentByID(id);
+
+        List<SubjectModel> allSubjects = subjectRepository.findAll();
+        for(SubjectModel subject: allSubjects){
+            if(subject.getStudentEnrolled() != null){
+                subject.getStudentEnrolled().remove(student.getUsername());
+                subjectRepository.save(subject);
+            }
+        }
         studentRepository.deleteById(id);
     }
 
