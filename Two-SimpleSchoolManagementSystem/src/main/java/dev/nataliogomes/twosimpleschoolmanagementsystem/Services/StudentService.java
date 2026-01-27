@@ -67,7 +67,7 @@ public class StudentService {
             student.getSubjects().add(subject);
             subject.getStudentEnrolled().add(student.getUsername());
         }
-        //since we modified subject lets update the database
+        //since we modified subject let's update the database
         subjectRepository.save(subject);
         return studentRepository.save(student);
     }
