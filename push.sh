@@ -14,7 +14,7 @@ if [ "$current_name" != "$USER_NAME" ]; then
 fi
 
 if [ "$current_email" != "$DESIRED_EMAIL" ]; then
-    git config --global user.email "$USER_NAME"
+    git config --global user.email "$USER_EMAIL"
     echo "Updated git user.email to: $USER_EMAIL"
 fi
 
