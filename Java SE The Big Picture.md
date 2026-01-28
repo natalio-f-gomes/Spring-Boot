@@ -1,4 +1,3 @@
-
 # Author: Natalio Gomes
 
 ## Java Development Kit (JDK)
@@ -142,5 +141,6 @@ Process
     ├── Thread 1 → Stack
     ├── Thread 2 → Stack
     └── Thread 3 → Stack
+
 
 ---
