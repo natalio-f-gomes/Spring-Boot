@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "Committing new changes"
 USER_NAME="natalio-f-gomes"
 USER_EMAIL="natalio.f.gomes@gmail.com"
 
